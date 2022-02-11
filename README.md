@@ -1,2 +1,3 @@
-# website
-my personal digital portfolio
+# Lavender's Website
+
+Lavender's personal digital portfolio.
