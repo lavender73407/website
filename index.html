@@ -1,17 +1,16 @@
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Lavender's Homepage</title>
 <style>
-{
-background-color: #d2b48c;
-margin-left: 20%;
-margin-right: 20%;
-border: 2px dotted black;
-padding: 10px 10px 10px 10px;
-font-family: sans serif;
+body {
+  background-color: #d2b48c;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 2px dotted black;
+  padding: 10px 10px 10px 10px;
+  font-family: sans serif;
 }
 </style>
 </head>
@@ -27,10 +26,11 @@ font-family: sans serif;
 <h2>
 <a href="headfirst">Headfirst Lessons</a>
 </h2>
+
 <h2>Portfolio</h2>
-<h2>
-<a href="resume">Resume</a>
-</h2>
+<ul>
+ <li><a href="resume">Resume</a></li>
+</ul>
 
 <footer>
 <a id="vLink1"><strong> HTML </strong> Valid! </a> |
@@ -44,3 +44,5 @@ var CSSvalidatorLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
 document.getElementById("vLink1").setAttribute("href", HTMLvalidatorLinkStr);
 document.getElementById("vLink2").setAttribute("href", CSSvalidatorLinkStr);
 </script>
+</body>
+</html>
