@@ -1,53 +1,47 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Lavender's Homepage</title>
 <style>
 body {
-  background-color: #dcd0ff;
+      text-align: center;
+      background-color: #dcd0ff;
 }
 h1 {
-    text align: center;
-    color: #301934;
-}
+    text-align: center;
+    color: #faeacb;
+} 
 </style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
 </head>
 <body>
-<h1>Lavender's Homepage :))</h1>
-<p>
-<h2>
-<a href="gdw">gdw</a>
-</h2>
-<h2>
-<a href="empathy">Empathy</a>
-</h2>
-<h2>
-<a href="headfirst">Headfirst Lessons</a>
-</h2>
+<h1>Lavender's Homepage</h1>
 
-<h2>Portfolio</h2>
-<ul>
- <li><a href="resume">Resume</a></li>
-</ul>
+<h3>
+<a href="headfirst">Headfirst</a>
+</h3>
 
-<h2>What's new?</h2>
-<ul>
- <li><a href="canvas.html">Canvas experiment</a></li>
- <li><a href="projectplan.html">Project Plan</a></li>
-</ul>
+<h3>Portfolio</h3>
+<a href="resume">Resume</a>
+
+<h3>What's new?</h3>
+<a href="canvas.html">Canvas experiment</a>
+<a href="projectplan.html">Project Plan</a>
 
 <footer>
 <a id="vLink1"><strong> HTML </strong> Valid! </a> |
 <a id="vLink2"><strong> CSS </strong> Valid! </a>
 </footer>
-<script>
-var loc = window.location.href;
-var HTMLvalidatorLinkStr = 'http://validator.w3.org/check?uri=' + loc;
-var CSSvalidatorLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
-                          loc + '?profile=css3';
-document.getElementById("vLink1").setAttribute("href", HTMLvalidatorLinkStr);
-document.getElementById("vLink2").setAttribute("href", CSSvalidatorLinkStr);
-</script>
 </body>
 </html>
